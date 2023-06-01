@@ -1,23 +1,23 @@
 import 'package:building_managemnet/app_color.dart';
 import 'package:building_managemnet/generated/l10n.dart';
+import 'package:building_managemnet/home/item_noti.dart';
 import 'package:flutter/material.dart';
 
 import '../asset_paths/image_paths.dart';
 
-
-class HomeScreen extends StatefulWidget{
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
   @override
   State<StatefulWidget> createState() => _HomeScreenState();
-
 }
 
 class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +27,9 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: <Widget>[
-              const SizedBox(height: 50,),
+              const SizedBox(
+                height: 50,
+              ),
               //top view
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -38,25 +40,25 @@ class _HomeScreenState extends State<HomeScreen> {
                       Text(
                         S.current.hello,
                         style: const TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24
-                        ),
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24),
                       ),
                       Text(
                         S.current.defaultNumber,
                         style: const TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.normal,
-                            fontSize: 18
-                        ),
+                            fontSize: 18),
                       )
                     ],
                   ),
                   Image.asset(ImagePaths.avatarImg)
                 ],
               ),
-              const SizedBox(height: 30,),
+              const SizedBox(
+                height: 30,
+              ),
               //panel PR
               Container(
                 height: 160,
@@ -80,27 +82,24 @@ class _HomeScreenState extends State<HomeScreen> {
                           style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
-                              fontSize: 20
-                          ),
+                              fontSize: 20),
                         ),
                         Text(
                           S.current.service,
                           style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.normal,
-                              fontSize: 18
-                          ),
+                              fontSize: 18),
                         ),
                         Text(
                           S.current.onlyForMember,
                           style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.normal,
-                              fontSize: 14
-                          ),
+                              fontSize: 14),
                         ),
                         ElevatedButton(
-                            onPressed: (){},
+                          onPressed: () {},
                           style: ButtonStyle(
                             shape: MaterialStateProperty.all<
                                 RoundedRectangleBorder>(
@@ -109,21 +108,19 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                             backgroundColor:
-                            MaterialStateProperty.all(Colors.white),
+                                MaterialStateProperty.all(Colors.white),
                             // elevation: MaterialStateProperty.all(3),
                             shadowColor:
-                            MaterialStateProperty.all(Colors.transparent),
+                                MaterialStateProperty.all(Colors.transparent),
                           ),
-                            child: Text(
-                              S.current.start,
-                              style: const TextStyle(
-                                  color: Colors.green,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 14
-                              ),
-                            ),
+                          child: Text(
+                            S.current.start,
+                            style: const TextStyle(
+                                color: Colors.green,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14),
+                          ),
                         )
-
                       ],
                     )
                   ],
@@ -138,22 +135,33 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: const TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
-                        fontSize: 18
-                    ),
+                        fontSize: 18),
                   ),
                   TextButton(
-                      onPressed: (){},
-                      child: Text(
-                        S.current.more,
-                        style: const TextStyle(
-                            color: Colors.green,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 14
-                        ),
-                      ),
+                    onPressed: () {},
+                    child: Text(
+                      S.current.more,
+                      style: const TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14),
+                    ),
                   )
                 ],
               ),
+              ListView.builder(
+                  physics: const ClampingScrollPhysics(),
+                  shrinkWrap: true,
+                  itemCount: 10,
+                  itemBuilder: (BuildContext context, int index) {
+                    return const Padding(
+                      padding: EdgeInsets.all(3.0),
+                      child: ItemNotification(
+                          title: "Hop cu dan ",
+                          time: "01/060/2023",
+                          description: "description \ndescription"),
+                    );
+                  }),
             ],
           ),
         ),

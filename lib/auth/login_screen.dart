@@ -1,6 +1,6 @@
 import 'package:building_managemnet/app_color.dart';
 import 'package:building_managemnet/auth/otp_screen.dart';
-import 'package:building_managemnet/home/home_screen.dart';
+import 'package:building_managemnet/futures/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

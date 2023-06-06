@@ -179,8 +179,10 @@ extension AppColor on Color {
   static const colorFFBAB0 = Color(0xffFFBAB0);
   static const colorFFFAFA = Color(0xffFFFAFA);
   static const colorBE5857 = Color(0xffBE5857);
+  static const color6f0301 = Color(0xff6f0301);
   static const colorFFEDED = Color(0xffFFEDED);
   static const colorMain   = Color(0xFF009069);
+  static const colorBackground  = Color(0xFFF4F4F4);
 
   static const splashGradient = LinearGradient(
     begin: Alignment.topLeft,

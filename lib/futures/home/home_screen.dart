@@ -1,9 +1,12 @@
 import 'package:building_managemnet/app_color.dart';
 import 'package:building_managemnet/generated/l10n.dart';
-import 'package:building_managemnet/home/item_noti.dart';
+import 'package:building_managemnet/futures/home/item_news.dart';
+import 'package:building_managemnet/futures/home/item_noti.dart';
+import 'package:building_managemnet/futures/home/item_service.dart';
 import 'package:flutter/material.dart';
 
-import '../asset_paths/image_paths.dart';
+import '../../asset_paths/image_paths.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -22,14 +25,14 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: false,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: <Widget>[
-              const SizedBox(
-                height: 50,
-              ),
               //top view
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -126,6 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
+
               //notification
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -152,7 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ListView.builder(
                   physics: const ClampingScrollPhysics(),
                   shrinkWrap: true,
-                  itemCount: 10,
+                  itemCount: 3,
                   itemBuilder: (BuildContext context, int index) {
                     return const Padding(
                       padding: EdgeInsets.all(3.0),
@@ -160,6 +164,82 @@ class _HomeScreenState extends State<HomeScreen> {
                           title: "Hop cu dan ",
                           time: "01/060/2023",
                           description: "description \ndescription"),
+                    );
+                  }),
+
+              //service
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    S.current.serviceInBuilding,
+                    style: const TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      S.current.more,
+                      style: const TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14),
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 202.0,
+                child: ListView.builder(
+                    shrinkWrap: true,
+                    itemCount: 2,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (BuildContext context, int index) {
+                      return  Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: ItemService(
+                            thumbnailPath: ImagePaths.serviceThumbnail,
+                            description: S.current.serviceDescription),
+                      );
+                    }),
+              ),
+
+              //news
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    S.current.news,
+                    style: const TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      S.current.more,
+                      style: const TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14),
+                    ),
+                  )
+                ],
+              ),
+              ListView.builder(
+                  physics: const ClampingScrollPhysics(),
+                  shrinkWrap: true,
+                  itemCount: 2,
+                  itemBuilder: (BuildContext context, int index) {
+                    return  Padding(
+                      padding: const EdgeInsets.all(3.0),
+                      child: ItemNews(
+                          title: S.current.newsTitle,
+                          thumbnailPath: ImagePaths.newsThumbnail,
+                          description: S.current.newsDescription),
                     );
                   }),
             ],

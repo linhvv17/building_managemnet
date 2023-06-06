@@ -609,6 +609,256 @@ class S {
       args: [],
     );
   }
+
+  /// `Dịch vụ trong tòa nhà`
+  String get serviceInBuilding {
+    return Intl.message(
+      'Dịch vụ trong tòa nhà',
+      name: 'serviceInBuilding',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lorem Ipsum is simply\ndummy text of the\nprinting and typesetting\nindustry. `
+  String get serviceDescription {
+    return Intl.message(
+      'Lorem Ipsum is simply\ndummy text of the\nprinting and typesetting\nindustry. ',
+      name: 'serviceDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tin tức`
+  String get news {
+    return Intl.message(
+      'Tin tức',
+      name: 'news',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Jack Laurent`
+  String get newsTitle {
+    return Intl.message(
+      'Jack Laurent',
+      name: 'newsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Distinctive lifestyle.\nDesigned for horizon lovers.`
+  String get newsDescription {
+    return Intl.message(
+      'Distinctive lifestyle.\nDesigned for horizon lovers.',
+      name: 'newsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Trang chủ`
+  String get homeBtb {
+    return Intl.message(
+      'Trang chủ',
+      name: 'homeBtb',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dịch vụ`
+  String get serviceBtb {
+    return Intl.message(
+      'Dịch vụ',
+      name: 'serviceBtb',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thanh toán`
+  String get payBtb {
+    return Intl.message(
+      'Thanh toán',
+      name: 'payBtb',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thông báo`
+  String get notificationBtb {
+    return Intl.message(
+      'Thông báo',
+      name: 'notificationBtb',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tài khoản`
+  String get accountBtb {
+    return Intl.message(
+      'Tài khoản',
+      name: 'accountBtb',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dịch vụ tòa nhà`
+  String get serviceBuilding {
+    return Intl.message(
+      'Dịch vụ tòa nhà',
+      name: 'serviceBuilding',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dịch vụ khác`
+  String get serviceOther {
+    return Intl.message(
+      'Dịch vụ khác',
+      name: 'serviceOther',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tiện ích`
+  String get servicePlugin {
+    return Intl.message(
+      'Tiện ích',
+      name: 'servicePlugin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Chưa thanh toán`
+  String get unpaid {
+    return Intl.message(
+      'Chưa thanh toán',
+      name: 'unpaid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Đã thanh toán`
+  String get paid {
+    return Intl.message(
+      'Đã thanh toán',
+      name: 'paid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thông tin tài khoản`
+  String get infoAccountSettings {
+    return Intl.message(
+      'Thông tin tài khoản',
+      name: 'infoAccountSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cập nhật thông tin cá nhân`
+  String get infoAccountDes {
+    return Intl.message(
+      'Cập nhật thông tin cá nhân',
+      name: 'infoAccountDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mật khẩu`
+  String get passWordSettings {
+    return Intl.message(
+      'Mật khẩu',
+      name: 'passWordSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cập nhật thông tin bảo mật`
+  String get passWordDes {
+    return Intl.message(
+      'Cập nhật thông tin bảo mật',
+      name: 'passWordDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dịch vụ`
+  String get servicesSettings {
+    return Intl.message(
+      'Dịch vụ',
+      name: 'servicesSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Những dịch vụ đang sử dụng`
+  String get servicesDes {
+    return Intl.message(
+      'Những dịch vụ đang sử dụng',
+      name: 'servicesDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quản lý yêu cầu BQL`
+  String get requestSettings {
+    return Intl.message(
+      'Quản lý yêu cầu BQL',
+      name: 'requestSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tình trạng xử lý yêu cầu  `
+  String get requestDes {
+    return Intl.message(
+      'Tình trạng xử lý yêu cầu  ',
+      name: 'requestDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hỗ trợ`
+  String get helpSettings {
+    return Intl.message(
+      'Hỗ trợ',
+      name: 'helpSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gửi báo cáo lỗi thẻ`
+  String get helpDes {
+    return Intl.message(
+      'Gửi báo cáo lỗi thẻ',
+      name: 'helpDes',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

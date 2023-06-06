@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "accountBtb": MessageLookupByLibrary.simpleMessage("Tài khoản"),
         "addInfo": MessageLookupByLibrary.simpleMessage(
             "Xin hãy bổ sung thông tin \nđể xác minh tài khoản"),
         "addInfoButton":
@@ -42,26 +43,43 @@ class MessageLookup extends MessageLookupByLibrary {
         "fullName": MessageLookupByLibrary.simpleMessage("Họ và tên"),
         "haveAccount": MessageLookupByLibrary.simpleMessage("Có tài khoản?"),
         "hello": MessageLookupByLibrary.simpleMessage("Xin chào"),
+        "helpDes": MessageLookupByLibrary.simpleMessage("Gửi báo cáo lỗi thẻ"),
+        "helpSettings": MessageLookupByLibrary.simpleMessage("Hỗ trợ"),
         "hidePassword": MessageLookupByLibrary.simpleMessage("********"),
         "hintBuild": MessageLookupByLibrary.simpleMessage("Tên tòa"),
         "hintEmail": MessageLookupByLibrary.simpleMessage("Email"),
         "hintFullName": MessageLookupByLibrary.simpleMessage("Họ và tên"),
         "hintProject": MessageLookupByLibrary.simpleMessage("Tên dự án"),
         "hintRoom": MessageLookupByLibrary.simpleMessage("Số phòng"),
+        "homeBtb": MessageLookupByLibrary.simpleMessage("Trang chủ"),
+        "infoAccountDes":
+            MessageLookupByLibrary.simpleMessage("Cập nhật thông tin cá nhân"),
+        "infoAccountSettings":
+            MessageLookupByLibrary.simpleMessage("Thông tin tài khoản"),
         "intro": MessageLookupByLibrary.simpleMessage(
             "Hãy làm cuộc sống của bạn\n dễ dàng hơn với dịch vụ của\n chúng tôi."),
         "login": MessageLookupByLibrary.simpleMessage("Đăng nhập"),
         "more": MessageLookupByLibrary.simpleMessage("Thêm...>"),
         "name": MessageLookupByLibrary.simpleMessage("Alan Wilson"),
+        "news": MessageLookupByLibrary.simpleMessage("Tin tức"),
+        "newsDescription": MessageLookupByLibrary.simpleMessage(
+            "Distinctive lifestyle.\nDesigned for horizon lovers."),
+        "newsTitle": MessageLookupByLibrary.simpleMessage("Jack Laurent"),
         "notReceiverOTP":
             MessageLookupByLibrary.simpleMessage("Không nhận được OTP?"),
         "notification": MessageLookupByLibrary.simpleMessage("Thông báo "),
+        "notificationBtb": MessageLookupByLibrary.simpleMessage("Thông báo"),
         "number": MessageLookupByLibrary.simpleMessage("Số điện thoại"),
         "onlyForMember":
             MessageLookupByLibrary.simpleMessage("Chỉ dành cho dân cư"),
         "otp": MessageLookupByLibrary.simpleMessage(
             "Chúng tôi đã gửi mã OTP đến\nsố điện thoại của bạn"),
+        "paid": MessageLookupByLibrary.simpleMessage("Đã thanh toán"),
+        "passWordDes":
+            MessageLookupByLibrary.simpleMessage("Cập nhật thông tin bảo mật"),
+        "passWordSettings": MessageLookupByLibrary.simpleMessage("Mật khẩu"),
         "password": MessageLookupByLibrary.simpleMessage("Mật khẩu"),
+        "payBtb": MessageLookupByLibrary.simpleMessage("Thanh toán"),
         "policyAddInfo_1": MessageLookupByLibrary.simpleMessage(
             "Bằng cách tiếp tục, bạn đồng ý với các "),
         "policyAddInfo_2":
@@ -89,11 +107,28 @@ class MessageLookup extends MessageLookupByLibrary {
         "reInputPassword":
             MessageLookupByLibrary.simpleMessage("Nhập lại mật khẩu"),
         "register": MessageLookupByLibrary.simpleMessage("Đăng ký"),
+        "requestDes":
+            MessageLookupByLibrary.simpleMessage("Tình trạng xử lý yêu cầu  "),
+        "requestSettings":
+            MessageLookupByLibrary.simpleMessage("Quản lý yêu cầu BQL"),
         "resendOTP": MessageLookupByLibrary.simpleMessage("Gửi lại"),
         "room": MessageLookupByLibrary.simpleMessage("Căn hộ"),
         "service": MessageLookupByLibrary.simpleMessage("Dịch vụ"),
+        "serviceBtb": MessageLookupByLibrary.simpleMessage("Dịch vụ"),
+        "serviceBuilding":
+            MessageLookupByLibrary.simpleMessage("Dịch vụ tòa nhà"),
+        "serviceDescription": MessageLookupByLibrary.simpleMessage(
+            "Lorem Ipsum is simply\ndummy text of the\nprinting and typesetting\nindustry. "),
+        "serviceInBuilding":
+            MessageLookupByLibrary.simpleMessage("Dịch vụ trong tòa nhà"),
+        "serviceOther": MessageLookupByLibrary.simpleMessage("Dịch vụ khác"),
+        "servicePlugin": MessageLookupByLibrary.simpleMessage("Tiện ích"),
+        "servicesDes":
+            MessageLookupByLibrary.simpleMessage("Những dịch vụ đang sử dụng"),
+        "servicesSettings": MessageLookupByLibrary.simpleMessage("Dịch vụ"),
         "start": MessageLookupByLibrary.simpleMessage("Bắt đầu"),
         "support": MessageLookupByLibrary.simpleMessage("Hỗ trợ"),
+        "unpaid": MessageLookupByLibrary.simpleMessage("Chưa thanh toán"),
         "welcome": MessageLookupByLibrary.simpleMessage("Welcome to Smaci"),
         "welcomeAddInfo": MessageLookupByLibrary.simpleMessage("Xin chào!")
       };

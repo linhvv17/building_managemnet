@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         S.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      home: const DashBoardScreen(),
+      home: const SplashScreen(),
     );
   }
 }

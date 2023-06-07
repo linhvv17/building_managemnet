@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../asset_paths/image_paths.dart';
+import '../../dashborad/dashboard_screen.dart';
 import '../../generated/l10n.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -176,7 +177,7 @@ class LoginScreen extends StatelessWidget {
                           onPressed: () {
                             Navigator.of(context).push(MaterialPageRoute(
                                 // builder: (context) => const OTPScreen()));
-                                builder: (context) => const HomeScreen()));
+                                builder: (context) => const DashBoardScreen()));
                           },
                           child: Text(
                             S.of(context).login,

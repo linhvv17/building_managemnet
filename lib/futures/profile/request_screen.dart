@@ -173,8 +173,14 @@ class _ItemViewReport extends State<ItemViewReport> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ElevatedButton(
-                            onPressed: (){},
+                        Container(
+                          decoration: const BoxDecoration(
+                              color: Colors.yellow,
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(5.0),
+                              )),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
                             child: Text(
                               widget.type,
                               style: const TextStyle(
@@ -183,6 +189,7 @@ class _ItemViewReport extends State<ItemViewReport> {
                                   fontSize: 13
                               ),
                             ),
+                          ),
                         ),
 
                         const Text(

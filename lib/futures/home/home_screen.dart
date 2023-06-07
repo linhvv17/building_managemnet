@@ -1,4 +1,5 @@
 import 'package:building_managemnet/app_color.dart';
+import 'package:building_managemnet/futures/notification/resident_info_screen.dart';
 import 'package:building_managemnet/generated/l10n.dart';
 import 'package:building_managemnet/futures/home/item_news.dart';
 import 'package:building_managemnet/futures/home/item_noti.dart';
@@ -142,7 +143,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontSize: 18),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const ResidentInfoScreen()),
+                      );
+                    },
                     child: Text(
                       S.current.more,
                       style: const TextStyle(

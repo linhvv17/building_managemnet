@@ -1,9 +1,9 @@
-import 'package:building_managemnet/auth/register_screen.dart';
+import 'package:building_managemnet/futures/auth/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../asset_paths/image_paths.dart';
-import '../generated/l10n.dart';
+import '../../asset_paths/image_paths.dart';
+import '../../generated/l10n.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});

@@ -1,11 +1,11 @@
 import 'package:building_managemnet/app_color.dart';
-import 'package:building_managemnet/auth/acc_processing_screen.dart';
-import 'package:building_managemnet/auth/login_screen.dart';
+import 'package:building_managemnet/futures/auth/acc_processing_screen.dart';
+import 'package:building_managemnet/futures/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../asset_paths/image_paths.dart';
-import '../generated/l10n.dart';
+import '../../asset_paths/image_paths.dart';
+import '../../generated/l10n.dart';
 
 class AddInfoScreen extends StatelessWidget {
   const

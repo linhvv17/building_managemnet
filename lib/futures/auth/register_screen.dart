@@ -1,14 +1,13 @@
 import 'package:building_managemnet/app_color.dart';
-import 'package:building_managemnet/auth/otp_screen.dart';
-import 'package:building_managemnet/futures/home/home_screen.dart';
+import 'package:building_managemnet/futures/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../asset_paths/image_paths.dart';
-import '../generated/l10n.dart';
+import '../../asset_paths/image_paths.dart';
+import '../../generated/l10n.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,13 +31,13 @@ class LoginScreen extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          S.of(context).welcome,
+                          S.of(context).createAccount,
                           textAlign: TextAlign.start,
                           style: const TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
@@ -47,97 +46,79 @@ class LoginScreen extends StatelessWidget {
 
                       //number phone
                       Padding(
-                        padding:
-                            const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                        padding: const EdgeInsets.fromLTRB(0.0,10.0,0.0,10.0),
                         child: Text(
                           S.of(context).number,
                           textAlign: TextAlign.start,
                           style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey.shade500),
+                              fontSize: 13, fontWeight: FontWeight.bold,color: Colors.grey.shade500),
                         ),
                       ),
                       TextField(
                         decoration: InputDecoration(
                           hintText: S.current.defaultNumber,
-                          hintStyle: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey.shade500),
+                          hintStyle: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.grey.shade500),
                           border: const OutlineInputBorder(),
                           enabledBorder: const OutlineInputBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(10.0)),
-                            borderSide:
-                                BorderSide(color: Colors.white, width: 1.5),
+                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderSide:
+                              BorderSide(color: Colors.white, width: 1.5),
                           ),
                           filled: true,
-                          fillColor: Colors.white,
-                          focusColor: Colors.white,
-                          focusedBorder: const OutlineInputBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(10.0)),
-                            borderSide:
-                                BorderSide(color: Colors.white, width: 1.5),
-                          ),
+                          fillColor: Colors.white
                         ),
                       ),
 
                       //password
                       Padding(
-                        padding:
-                            const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                        padding: const EdgeInsets.fromLTRB(0.0,10.0,0.0,10.0),
                         child: Text(
                           S.of(context).password,
                           textAlign: TextAlign.start,
                           style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey.shade500),
+                              fontSize: 13, fontWeight: FontWeight.bold,color: Colors.grey.shade500),
+                        ),
+                      ),
+                      TextField(
+                        decoration: InputDecoration(
+                          hintText: S.current.hidePassword,
+                            hintStyle: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.grey.shade500),
+                            border: const OutlineInputBorder(),
+                            enabledBorder: const OutlineInputBorder(
+                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderSide:
+                              BorderSide(color: Colors.white, width: 1.5),
+                            ),
+                            filled: true,
+                            fillColor: Colors.white
+                        ),
+                        obscureText: true,
+                      ),
+
+                      //confirm password
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0.0,10.0,0.0,10.0),
+                        child: Text(
+                          S.of(context).reInputPassword,
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                              fontSize: 13, fontWeight: FontWeight.bold,color: Colors.grey.shade500),
                         ),
                       ),
                       TextField(
                         decoration: InputDecoration(
                             hintText: S.current.hidePassword,
-                            hintStyle: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.grey.shade500),
+                            hintStyle: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.grey.shade500),
                             border: const OutlineInputBorder(),
                             enabledBorder: const OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10.0)),
+                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
                               borderSide:
-                                  BorderSide(color: Colors.white, width: 1.5),
+                              BorderSide(color: Colors.white, width: 1.5),
                             ),
                             filled: true,
-                            fillColor: Colors.white,
-                            focusColor: Colors.white,
-                            focusedBorder: const OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10.0)),
-                              borderSide:
-                                  BorderSide(color: Colors.white, width: 1.5),
-                            ),
-                            suffixIcon:
-                                const Icon(Icons.remove_red_eye_outlined)),
-                        obscureText: true,
-                      ),
-
-                      //forget password
-                      Align(
-                        alignment: Alignment.centerLeft,
-                        child: Padding(
-                          padding:
-                              const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
-                          child: Text(
-                            S.of(context).forgetPassword,
-                            textAlign: TextAlign.start,
-                            style: const TextStyle(
-                                fontSize: 14, fontWeight: FontWeight.bold),
-                          ),
+                            fillColor: Colors.white
                         ),
+                        obscureText: true,
                       ),
                     ],
                   ),
@@ -173,13 +154,9 @@ class LoginScreen extends StatelessWidget {
                             shadowColor:
                                 MaterialStateProperty.all(Colors.transparent),
                           ),
-                          onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                // builder: (context) => const OTPScreen()));
-                                builder: (context) => const HomeScreen()));
-                          },
+                          onPressed: () {},
                           child: Text(
-                            S.of(context).login,
+                            S.of(context).register,
                             style: const TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold),
                           ),
@@ -195,10 +172,10 @@ class LoginScreen extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.all(10.0),
                           child: Text(
-                            S.of(context).createAccount,
+                            S.of(context).haveAccount,
                             style: const TextStyle(
                                 fontSize: 14,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.normal,
                                 color: Colors.grey),
                           ),
                         ),
@@ -214,27 +191,74 @@ class LoginScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: ElevatedButton(
                           onPressed: () {
-
+                            Navigator.of(context).push(
+                                MaterialPageRoute(builder: (context) => const LoginScreen())
+                            );
                           },
                           style: ButtonStyle(
                             backgroundColor:
                                 MaterialStateProperty.all(Colors.white),
                             // elevation: MaterialStateProperty.all(3),
-                            shadowColor:
-                                MaterialStateProperty.all(Colors.white),
+                            shadowColor: MaterialStateProperty.all(Colors.white),
                             textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(color: Colors.green)),
                             minimumSize: MaterialStateProperty.all(Size(
                                 MediaQuery.of(context).size.width * 0.9, 54)),
                           ),
                           child: Text(
-                            S.of(context).register,
+                            S.of(context).login,
                             style: TextStyle(
                                 color: AppColor.secondaryGreen.shade400,
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold),
                           )),
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                      Text(
+                        S.of(context).policy_1,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.normal),
+                      ),
+                      Text(
+                        S.of(context).policy_2,
+                        textAlign: TextAlign.center,
+                        style:  TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.bold, color: AppColor.secondaryGreen.shade400),
+                      ),
+                      Text(
+                        S.of(context).policy_3,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.normal),
+                      ),
+                      Text(
+                        S.of(context).policy_4,
+                        textAlign: TextAlign.center,
+                        style:  TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.bold, color: AppColor.secondaryGreen.shade400),
+                      ),
+                    ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                      Text(
+                        S.of(context).policy_5,
+                        textAlign: TextAlign.center,
+                        style:   TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.bold, color: AppColor.secondaryGreen.shade400),
+                      ),
+                      Text(
+                        S.of(context).policy_6,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.normal, ),
+                      ),
+                    ],
+                    )
                   ],
                 ))
           ],

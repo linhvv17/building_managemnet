@@ -27,23 +27,37 @@ class MessageLookup extends MessageLookupByLibrary {
             "Xin hãy bổ sung thông tin \nđể xác minh tài khoản"),
         "addInfoButton":
             MessageLookupByLibrary.simpleMessage("Bổ sung thông tin"),
+        "allReport": MessageLookupByLibrary.simpleMessage("Tất cả"),
+        "ask": MessageLookupByLibrary.simpleMessage("Hỏi đáp"),
+        "askDes": MessageLookupByLibrary.simpleMessage("Câu hỏi thường gặp"),
         "backCard": MessageLookupByLibrary.simpleMessage("Mặt sau CCCD"),
         "backToLogin":
             MessageLookupByLibrary.simpleMessage("Trở lại Đăng nhập"),
         "build": MessageLookupByLibrary.simpleMessage("Tòa nhà "),
         "confirm": MessageLookupByLibrary.simpleMessage("Xác nhận"),
+        "confirmNewPass":
+            MessageLookupByLibrary.simpleMessage("Nhập lại mật khẩu mới"),
         "createAccount": MessageLookupByLibrary.simpleMessage("Tạo tài khoản?"),
         "defaultNumber":
             MessageLookupByLibrary.simpleMessage("+94 (780) 3831312"),
+        "electric": MessageLookupByLibrary.simpleMessage("Điện"),
+        "electricDes": MessageLookupByLibrary.simpleMessage("Dich vụ điện"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "error": MessageLookupByLibrary.simpleMessage("Báo cáo sự cố"),
+        "errorDes": MessageLookupByLibrary.simpleMessage(
+            "Báo cáo cho chúng tôi vấn đề của bạn"),
         "fontCard": MessageLookupByLibrary.simpleMessage("Mặt trước CCCD"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("Quên mật khẩu?"),
         "free": MessageLookupByLibrary.simpleMessage("Miễn phí"),
         "fullName": MessageLookupByLibrary.simpleMessage("Họ và tên"),
+        "gym": MessageLookupByLibrary.simpleMessage("California Fitnes & Yoga"),
+        "gymDes": MessageLookupByLibrary.simpleMessage("Chăm sóc sức khỏe"),
         "haveAccount": MessageLookupByLibrary.simpleMessage("Có tài khoản?"),
         "hello": MessageLookupByLibrary.simpleMessage("Xin chào"),
-        "helpDes": MessageLookupByLibrary.simpleMessage("Gửi báo cáo lỗi thẻ"),
+        "help": MessageLookupByLibrary.simpleMessage("Giúp việc"),
+        "helpDes":
+            MessageLookupByLibrary.simpleMessage("Dịch vụ giúp việc theo giờ"),
         "helpSettings": MessageLookupByLibrary.simpleMessage("Hỗ trợ"),
         "hidePassword": MessageLookupByLibrary.simpleMessage("********"),
         "hintBuild": MessageLookupByLibrary.simpleMessage("Tên tòa"),
@@ -60,7 +74,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "Hãy làm cuộc sống của bạn\n dễ dàng hơn với dịch vụ của\n chúng tôi."),
         "login": MessageLookupByLibrary.simpleMessage("Đăng nhập"),
         "more": MessageLookupByLibrary.simpleMessage("Thêm...>"),
+        "msg": MessageLookupByLibrary.simpleMessage("Gặp CSKH"),
+        "msgDes": MessageLookupByLibrary.simpleMessage("Online"),
         "name": MessageLookupByLibrary.simpleMessage("Alan Wilson"),
+        "newPass": MessageLookupByLibrary.simpleMessage("Mật khẩu mới"),
+        "newReport": MessageLookupByLibrary.simpleMessage("Báo cáo mới"),
         "news": MessageLookupByLibrary.simpleMessage("Tin tức"),
         "newsDescription": MessageLookupByLibrary.simpleMessage(
             "Distinctive lifestyle.\nDesigned for horizon lovers."),
@@ -70,11 +88,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "notification": MessageLookupByLibrary.simpleMessage("Thông báo "),
         "notificationBtb": MessageLookupByLibrary.simpleMessage("Thông báo"),
         "number": MessageLookupByLibrary.simpleMessage("Số điện thoại"),
+        "oldPass": MessageLookupByLibrary.simpleMessage("Mật khẩu cũ"),
         "onlyForMember":
             MessageLookupByLibrary.simpleMessage("Chỉ dành cho dân cư"),
         "otp": MessageLookupByLibrary.simpleMessage(
             "Chúng tôi đã gửi mã OTP đến\nsố điện thoại của bạn"),
         "paid": MessageLookupByLibrary.simpleMessage("Đã thanh toán"),
+        "parkCar": MessageLookupByLibrary.simpleMessage("Gửi xe"),
+        "parkCarDes": MessageLookupByLibrary.simpleMessage("Bãi đỗ xe"),
         "passWordDes":
             MessageLookupByLibrary.simpleMessage("Cập nhật thông tin bảo mật"),
         "passWordSettings": MessageLookupByLibrary.simpleMessage("Mật khẩu"),
@@ -100,6 +121,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "policy_4": MessageLookupByLibrary.simpleMessage("điều "),
         "policy_5": MessageLookupByLibrary.simpleMessage("kiện sử dụng  "),
         "policy_6": MessageLookupByLibrary.simpleMessage("của chúng tôi."),
+        "processReport": MessageLookupByLibrary.simpleMessage("Đang xử lý"),
         "processing": MessageLookupByLibrary.simpleMessage("Đang được xử lý"),
         "processingDescription": MessageLookupByLibrary.simpleMessage(
             "Chúng tôi đang xử lý tài khoản của bạn,\nchúng tôi sẽ liên hệ với bạn trong thời gian\nsớm nhất để nhận được dịch vụ từ chúng tôi"),
@@ -112,6 +134,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSettings":
             MessageLookupByLibrary.simpleMessage("Quản lý yêu cầu BQL"),
         "resendOTP": MessageLookupByLibrary.simpleMessage("Gửi lại"),
+        "residentInfoTitleScreen":
+            MessageLookupByLibrary.simpleMessage("Thông tin cư dân"),
         "room": MessageLookupByLibrary.simpleMessage("Căn hộ"),
         "service": MessageLookupByLibrary.simpleMessage("Dịch vụ"),
         "serviceBtb": MessageLookupByLibrary.simpleMessage("Dịch vụ"),
@@ -122,13 +146,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "serviceInBuilding":
             MessageLookupByLibrary.simpleMessage("Dịch vụ trong tòa nhà"),
         "serviceOther": MessageLookupByLibrary.simpleMessage("Dịch vụ khác"),
+        "serviceOtherSettings": MessageLookupByLibrary.simpleMessage(
+            "Các dịch vụ và tiện ích khác"),
         "servicePlugin": MessageLookupByLibrary.simpleMessage("Tiện ích"),
         "servicesDes":
             MessageLookupByLibrary.simpleMessage("Những dịch vụ đang sử dụng"),
         "servicesSettings": MessageLookupByLibrary.simpleMessage("Dịch vụ"),
         "start": MessageLookupByLibrary.simpleMessage("Bắt đầu"),
         "support": MessageLookupByLibrary.simpleMessage("Hỗ trợ"),
+        "taxiKid": MessageLookupByLibrary.simpleMessage("Đưa đón"),
+        "taxiKidDes": MessageLookupByLibrary.simpleMessage("Đưa đón trẻ em"),
+        "tos": MessageLookupByLibrary.simpleMessage("T.O.S and Privacy Policy"),
+        "tosDes": MessageLookupByLibrary.simpleMessage(
+            "Điều khoản dịch vụ và quyền riêng tư"),
         "unpaid": MessageLookupByLibrary.simpleMessage("Chưa thanh toán"),
+        "update": MessageLookupByLibrary.simpleMessage("Cập nhật"),
+        "water": MessageLookupByLibrary.simpleMessage("Nước"),
+        "waterDes": MessageLookupByLibrary.simpleMessage("Dịch vụ nước"),
         "welcome": MessageLookupByLibrary.simpleMessage("Welcome to Smaci"),
         "welcomeAddInfo": MessageLookupByLibrary.simpleMessage("Xin chào!")
       };

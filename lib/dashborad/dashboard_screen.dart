@@ -1,5 +1,5 @@
 import 'package:building_managemnet/app_color.dart';
-import 'package:building_managemnet/auth/otp_screen.dart';
+import 'package:building_managemnet/futures/auth/otp_screen.dart';
 import 'package:building_managemnet/futures/notification/notification_screen.dart';
 import 'package:building_managemnet/futures/payment/payment_screen.dart';
 import 'package:building_managemnet/futures/profile/profile_screen.dart';

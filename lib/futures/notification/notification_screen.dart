@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../asset_paths/image_paths.dart';
+import 'notification_detail_screen.dart';
 
 
 class NotificationScreen extends StatelessWidget {
@@ -73,70 +74,78 @@ class _ItemNotification extends State<ItemNotification> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Row(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(4.0),
-            child: Image.asset(
-              ImagePaths.icService1,
-              width: 42,
-              height: 42,
+    return InkWell(
+      onTap: (){
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const NotificationDetailScreen()),
+        );
+      },
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Image.asset(
+                ImagePaths.icService1,
+                width: 42,
+                height: 42,
+              ),
             ),
-          ),
-          const Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Bao tri hang thang",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16
+            const Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Bao tri hang thang",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16
+                        ),
                       ),
-                    ),
-                    Text(
-                      "Bao tri be boi",
-                      style: TextStyle(
-                          color: Colors.grey,
-                          fontWeight: FontWeight.normal,
-                          fontSize: 13
+                      Text(
+                        "Bao tri be boi",
+                        style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.normal,
+                            fontSize: 13
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      '12:02',
-                      style: TextStyle(
-                          color: Colors.grey,
-                          fontWeight: FontWeight.normal,
-                          fontSize: 12
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        '12:02',
+                        style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.normal,
+                            fontSize: 12
+                        ),
                       ),
-                    ),
-                    Text(
-                      ".",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          color: AppColor.colorMain,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 40
+                      Text(
+                        ".",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: AppColor.colorMain,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 40
+                        ),
                       ),
-                    ),
-                  ],
-                )
-              ],
+                    ],
+                  )
+                ],
+              ),
             ),
-          ),
-        ],
-      )
+          ],
+        )
+      ),
     );
   }
 }

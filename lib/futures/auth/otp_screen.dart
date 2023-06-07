@@ -1,10 +1,10 @@
 import 'package:building_managemnet/app_color.dart';
-import 'package:building_managemnet/auth/add_info_intro_screen.dart';
+import 'package:building_managemnet/futures/auth/add_info_intro_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../asset_paths/image_paths.dart';
-import '../generated/l10n.dart';
+import '../../asset_paths/image_paths.dart';
+import '../../generated/l10n.dart';
 
 class OTPScreen extends StatelessWidget {
   const OTPScreen({super.key});

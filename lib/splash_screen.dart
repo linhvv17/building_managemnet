@@ -1,4 +1,4 @@
-import 'package:building_managemnet/auth/intro_screen.dart';
+import 'package:building_managemnet/futures/auth/intro_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';

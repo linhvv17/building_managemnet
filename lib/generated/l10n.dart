@@ -720,6 +720,16 @@ class S {
     );
   }
 
+  /// `Các dịch vụ và tiện ích khác`
+  String get serviceOtherSettings {
+    return Intl.message(
+      'Các dịch vụ và tiện ích khác',
+      name: 'serviceOtherSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Dịch vụ khác`
   String get serviceOther {
     return Intl.message(
@@ -850,11 +860,281 @@ class S {
     );
   }
 
-  /// `Gửi báo cáo lỗi thẻ`
+  /// `Dịch vụ giúp việc theo giờ`
   String get helpDes {
     return Intl.message(
-      'Gửi báo cáo lỗi thẻ',
+      'Dịch vụ giúp việc theo giờ',
       name: 'helpDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thông tin cư dân`
+  String get residentInfoTitleScreen {
+    return Intl.message(
+      'Thông tin cư dân',
+      name: 'residentInfoTitleScreen',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cập nhật`
+  String get update {
+    return Intl.message(
+      'Cập nhật',
+      name: 'update',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mật khẩu cũ`
+  String get oldPass {
+    return Intl.message(
+      'Mật khẩu cũ',
+      name: 'oldPass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mật khẩu mới`
+  String get newPass {
+    return Intl.message(
+      'Mật khẩu mới',
+      name: 'newPass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nhập lại mật khẩu mới`
+  String get confirmNewPass {
+    return Intl.message(
+      'Nhập lại mật khẩu mới',
+      name: 'confirmNewPass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hỏi đáp`
+  String get ask {
+    return Intl.message(
+      'Hỏi đáp',
+      name: 'ask',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Câu hỏi thường gặp`
+  String get askDes {
+    return Intl.message(
+      'Câu hỏi thường gặp',
+      name: 'askDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Báo cáo sự cố`
+  String get error {
+    return Intl.message(
+      'Báo cáo sự cố',
+      name: 'error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Báo cáo cho chúng tôi vấn đề của bạn`
+  String get errorDes {
+    return Intl.message(
+      'Báo cáo cho chúng tôi vấn đề của bạn',
+      name: 'errorDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gặp CSKH`
+  String get msg {
+    return Intl.message(
+      'Gặp CSKH',
+      name: 'msg',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Online`
+  String get msgDes {
+    return Intl.message(
+      'Online',
+      name: 'msgDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `T.O.S and Privacy Policy`
+  String get tos {
+    return Intl.message(
+      'T.O.S and Privacy Policy',
+      name: 'tos',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Điều khoản dịch vụ và quyền riêng tư`
+  String get tosDes {
+    return Intl.message(
+      'Điều khoản dịch vụ và quyền riêng tư',
+      name: 'tosDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Điện`
+  String get electric {
+    return Intl.message(
+      'Điện',
+      name: 'electric',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dich vụ điện`
+  String get electricDes {
+    return Intl.message(
+      'Dich vụ điện',
+      name: 'electricDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nước`
+  String get water {
+    return Intl.message(
+      'Nước',
+      name: 'water',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dịch vụ nước`
+  String get waterDes {
+    return Intl.message(
+      'Dịch vụ nước',
+      name: 'waterDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Giúp việc`
+  String get help {
+    return Intl.message(
+      'Giúp việc',
+      name: 'help',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gửi xe`
+  String get parkCar {
+    return Intl.message(
+      'Gửi xe',
+      name: 'parkCar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bãi đỗ xe`
+  String get parkCarDes {
+    return Intl.message(
+      'Bãi đỗ xe',
+      name: 'parkCarDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Đưa đón`
+  String get taxiKid {
+    return Intl.message(
+      'Đưa đón',
+      name: 'taxiKid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Đưa đón trẻ em`
+  String get taxiKidDes {
+    return Intl.message(
+      'Đưa đón trẻ em',
+      name: 'taxiKidDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `California Fitnes & Yoga`
+  String get gym {
+    return Intl.message(
+      'California Fitnes & Yoga',
+      name: 'gym',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Chăm sóc sức khỏe`
+  String get gymDes {
+    return Intl.message(
+      'Chăm sóc sức khỏe',
+      name: 'gymDes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tất cả`
+  String get allReport {
+    return Intl.message(
+      'Tất cả',
+      name: 'allReport',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Báo cáo mới`
+  String get newReport {
+    return Intl.message(
+      'Báo cáo mới',
+      name: 'newReport',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Đang xử lý`
+  String get processReport {
+    return Intl.message(
+      'Đang xử lý',
+      name: 'processReport',
       desc: '',
       args: [],
     );
